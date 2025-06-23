@@ -52,7 +52,7 @@ public class Biblioteca {
         if (listaLivros.isEmpty()) {
             System.out.println("Nenhum livro cadastrado ainda.");
         } else {
-            System.out.println("\n📚 Livros cadastrados:");
+            System.out.println("\n Livros cadastrados:");
             for (Livro l : listaLivros) {
                 System.out.println("- " + l);
             }
@@ -73,7 +73,7 @@ public class Biblioteca {
             System.out.println("0 - Sair");
             System.out.print("Escolha uma opção: ");
             opcao = scanner.nextInt();
-            scanner.nextLine(); // Limpar buffer
+            scanner.nextLine(); 
 
             switch (opcao) {
                 case 1:
@@ -95,14 +95,14 @@ public class Biblioteca {
                     String autor3 = scanner.nextLine();
                     System.out.print("Digite o ano de publicação: ");
                     int ano3 = scanner.nextInt();
-                    scanner.nextLine(); // Limpar buffer
+                    scanner.nextLine(); 
                     biblio.adicionarLivro(titulo3, autor3, ano3);
                     break;
                 case 4:
                     biblio.listarLivros();
                     break;
                 case 0:
-                    System.out.println("Saindo da biblioteca... 👋");
+                    System.out.println("Saindo da biblioteca... ");
                     break;
                 default:
                     System.out.println("Opção inválida! Tente novamente.");
